@@ -1,0 +1,24 @@
+# FastAPI framework
+fastapi==0.115.1
+
+# Uvicorn for ASGI serving
+uvicorn==0.34.0
+
+# Efficient OpenCV build without GUI
+opencv-python-headless==4.11.0.86
+
+# Numpy for numerical operations
+numpy<2.0  # Ensures compatibility with some packages
+
+# File upload support
+python-multipart==0.0.9
+
+# CORS for cross-origin API support
+flask-cors==5.0.1
+
+# PyTorch (already in base image, avoid reinstalling)
+# torch==2.1.0  <-- DO NOT install again in requirements.txt
+# torchvision==0.16.0  <-- Optional, only if needed in code
+
+# Image handling
+Pillow==10.2.0

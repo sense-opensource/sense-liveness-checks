@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(135deg, #e6f0fa, #d1e0f7);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1a2e44;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.app-title {
+  font-size: 23px;
+  color: #1a2e44;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.app-logo {
+  width: 200px;
+}
+
+.mode-toggle {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.mode-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: #e6ecf5;
+  color: #1a2e44;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.mode-button.active {
+  background: #7f56d9;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(42, 111, 214, 0.2);
+}
+
+.mode-button:hover:not(.active) {
+  background: #d1e0f7;
+}
+
+.webcam-section {
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+.webcam-preview {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #e6ecf5;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.action-button {
+  padding: 0.9rem 2rem;
+  background: #2a6fd6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 1rem;
+}
+
+.action-button:hover:not(:disabled) {
+  background: #1e5bc4;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(42, 111, 214, 0.3);
+}
+
+.action-button:disabled {
+  background: #a3bffa;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.capture-button {
+  background: #34d399;
+}
+
+.capture-button:hover:not(:disabled) {
+  background: #2ecc8b;
+}
+
+.spinner {
+  border: 2px solid #ffffff;
+  border-top: 2px solid #e6ecf5;
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+.preview-section {
+  margin: 1.5rem 0;
+}
+
+.preview-image {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+.error-message {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #fee2e2;
+  color: #dc2626;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  animation: slideIn 0.3s ease-in-out;
+}
+
+.result-card {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f0f4f8;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  animation: slideIn 0.3s ease-in-out;
+}
+
+.result-title {
+  font-size: 1.5rem;
+  color: #1a2e44;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.result-card p {
+  font-size: 1.1rem;
+  color: #2d3748;
+  margin: 0.75rem 0;
+}
+
+.result-card strong {
+  color: #1a2e44;
+  font-weight: 600;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .app-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .app-title {
+    font-size: 1.75rem;
+  }
+
+  .mode-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .action-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+
+  .webcam-preview {
+    max-width: 100%;
+  }
+
+  .result-title {
+    font-size: 1.25rem;
+  }
+}
+
+/* Utility Classes */
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-footer {
+  padding: 15px;
+  text-align: center;
+  margin-top: auto;  }
+
+
+.app-footer p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+

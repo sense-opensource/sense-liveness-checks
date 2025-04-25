@@ -1,0 +1,12 @@
+services:
+  sense-liveness-opensource:
+    container_name: sense_liveness_opensource_container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sense_liveness_opensource_image
+    ports:
+      - "3016:3016"  # map host:container
+    restart: unless-stopped
+    environment:
+      - TZ=Asia/Kolkata
