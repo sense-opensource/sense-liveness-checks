@@ -69,7 +69,7 @@ uvicorn app:app --reload
 <h3> 2. Build Docker Image </h3>
 
 ```docker
-docker build -t sense_liveness_opensource_image </p>
+docker build -t sense_liveness_opensource_image .
 ```
 
 <h3> 3. Run Docker Container </h3>
