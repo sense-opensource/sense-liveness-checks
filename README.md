@@ -22,7 +22,7 @@
 <h4> Clone the Repository </h4> 
 
 <p> git clone https://github.com/sense-opensource/sense-liveness-checks.git </p>
-<p> cd liveness </p>
+<p> cd sense-liveness-checks </p>
 
 <h4> 🧠 Model </h4>
 
