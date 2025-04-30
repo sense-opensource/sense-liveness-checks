@@ -67,7 +67,8 @@ uvicorn app:app --reload
 
 <p> This will start the API server on: http://localhost:3016 </p>
 
-<h4>Method 2: Build Docker Image </h4>
+<h4>Method 2: Running with Docker </h4>
+<h4>Build Docker Image </h4>
 
 ```docker
 docker build -t sense_liveness_opensource_image .
