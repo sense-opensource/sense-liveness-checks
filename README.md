@@ -52,13 +52,14 @@ cd sense-liveness-checks
 
 <p> Ensure the model is saved in: <i>resources/efficientnet-b7.onnx </i> </p>
 
-<h3> Install Python Dependencies </h3>
+<h3>2. API Configuration </h3>
+<h4>Method 1: Install Python Dependencies </h4>
 
 ```bash
 pip install -r requirements.txt
 ```
 
-<h3> Start the FastAPI Server </h3>
+<h4> Start the FastAPI Server </h4>
 
 ```bash
 uvicorn app:app --reload
@@ -66,13 +67,13 @@ uvicorn app:app --reload
 
 <p> This will start the API server on: http://localhost:3016 </p>
 
-<h3> 2. Build Docker Image </h3>
+<h4>Method 2: Build Docker Image </h4>
 
 ```docker
 docker build -t sense_liveness_opensource_image .
 ```
 
-<h3> 3. Run Docker Container </h3>
+<h4>Run Docker Container </h4>
 
 ```docker
 docker run -d --name sense_liveness_opensource_container -p 3016:3016 sense_liveness_opensource_image
@@ -80,7 +81,7 @@ docker run -d --name sense_liveness_opensource_container -p 3016:3016 sense_live
 
 <p> This will start the API server on: http://localhost:3016 </p>
 
-<h3> 4. Run the Frontend </h3>
+<h3>3. Run the Frontend </h3>
 
 ```bash
 cd front-end
