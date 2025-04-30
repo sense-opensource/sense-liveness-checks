@@ -36,6 +36,16 @@
 
 <p> Ensure the model is saved in: <i>resources/efficientnet-b7.onnx </i> </p>
 
+<h3> Install Python Dependencies </h3>
+
+<p> pip install -r requirements.txt </p>
+
+<h3> Start the FastAPI Server </h3>
+
+<p> uvicorn app:app --reload </p>
+
+<p> This will start the API server on: http://localhost:3016 </p>
+
 <h3> 2. Build Docker Image </h3>
 
 <p> docker build -t sense_liveness_opensource_image </p>
