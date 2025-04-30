@@ -19,6 +19,11 @@
 
 <p> [Docker](https://www.docker.com/products/docker-desktop) installed </p>              
 
+<h4> Clone the Repository </h4> 
+
+<p> git clone https://github.com/sense-opensource/sense-liveness-checks.git </p>
+<p> cd liveness </p>
+
 <h4> 🧠 Model </h4>
 
 <p> The anti spoof model file is <b>not included</b> in the repository. You must download the model file manually or programmatically and place it in the appropriate folder.</p>
@@ -30,11 +35,6 @@
 <p> [Model] (https://github.com/sense-opensource/sense-liveness-checks/releases/download/v1.0.0/efficientnet-b7.onnx this file needs to be placed inside the resources folder) </p>
 
 <p> Ensure the model is saved in: <i>resources/efficientnet-b7.onnx </i> </p>
-
-<h4> Clone the Repository </h4> 
-
-<p> git clone https://github.com/sense-opensource/sense-liveness-checks.git </p>
-<p> cd liveness </p>
 
 <h3> 2. Build Docker Image </h3>
 
