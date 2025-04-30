@@ -29,9 +29,7 @@
 
 <p> [Model] (https://github.com/sense-opensource/sense-liveness-checks/releases/download/v1.0.0/efficientnet-b7.onnx this file needs to be placed inside the resources folder) </p>
 
-<p> Ensure the model is saved in:  </p>
-
-<p> resources/efficientnet-b7.onnx </p>
+<p> Ensure the model is saved in: <i>resources/efficientnet-b7.onnx </i> </p>
 
 <h4> Clone the Repository </h4> 
 
