@@ -4,7 +4,6 @@
     <a href="https://github.com/sense-opensource/sense-liveness-checks/blob/main/LICENSE">
         <img width="8%" src="https://badge-generator.vercel.app/api?label=License&status=MIT&color=6941C6"> 
     </a>
-    <img width="12.6%" src="https://badge-generator.vercel.app/api?icon=Github&label=Last%20Commit&status=May&color=6941C6"/> 
     <a href="https://discord.gg/hzNHTpwt">
         <img width="10%" src="https://badge-generator.vercel.app/api?icon=Discord&label=Discord&status=Live&color=6941C6"> 
     </a>
@@ -47,9 +46,9 @@ cd sense-liveness-checks
 <p> Download the model file from the below link: </p>
 
 ```bash
-[Model] (https://github.com/sense-opensource/sense-liveness-checks/releases/download/v1.0.0/efficientnet-b7.onnx this file needs to be placed inside the resources folder)
+https://github.com/sense-opensource/sense-liveness-checks/releases/download/v1.0.0/efficientnet-b7.onnx
 ```
-
+this file needs to be placed inside the resources folder</br>
 <p> Ensure the model is saved in: <i>resources/efficientnet-b7.onnx </i> </p>
 
 <h3>2. API Configuration </h3>
