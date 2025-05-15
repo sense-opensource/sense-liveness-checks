@@ -22,3 +22,7 @@ flask-cors==5.0.1
 
 # Image handling
 Pillow==10.2.0
+filetype==1.2.0
+
+# ONNX Runtime for Deepfake Detection
+onnxruntime==1.17.1

@@ -47,10 +47,10 @@ cd sense-liveness-checks
 <p> Download the model file from the below link: </p>
 
 ```bash
-[Model] (https://github.com/sense-opensource/sense-liveness-checks/releases/download/v1.0.0/efficientnet-b7.onnx this file needs to be placed inside the resources folder)
+[Model] (https://github.com/sense-opensource/sense-liveness-checks/releases/download/v1.0.0/efficientnet-b7.onnx this file needs to be placed inside the resources/deepfake/ folder)
 ```
 
-<p> Ensure the model is saved in: <i>resources/efficientnet-b7.onnx </i> </p>
+<p> Ensure the model is saved in: <i>resources/deepfake/efficientnet-b7.onnx </i> </p>
 
 <h3> Install Python Dependencies </h3>
 
