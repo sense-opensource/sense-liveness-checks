@@ -4,7 +4,6 @@
     <a href="https://github.com/sense-opensource/sense-liveness-checks/blob/main/LICENSE">
         <img width="8%" src="https://badge-generator.vercel.app/api?label=License&status=MIT&color=6941C6"> 
     </a>
-    <img width="12.6%" src="https://badge-generator.vercel.app/api?icon=Github&label=Last%20Commit&status=May&color=6941C6"/> 
     <a href="https://discord.gg/hzNHTpwt">
         <img width="10%" src="https://badge-generator.vercel.app/api?icon=Discord&label=Discord&status=Live&color=6941C6"> 
     </a>
@@ -47,18 +46,19 @@ cd sense-liveness-checks
 <p> Download the model file from the below link: </p>
 
 ```bash
-[Model] (https://github.com/sense-opensource/sense-liveness-checks/releases/download/v1.0.0/efficientnet-b7.onnx this file needs to be placed inside the resources/deepfake/ folder)
+https://github.com/sense-opensource/sense-liveness-checks/releases/download/v1.0.0/efficientnet-b7.onnx this file needs to be placed inside the resources/deepfake/ folder
 ```
 
 <p> Ensure the model is saved in: <i>resources/deepfake/efficientnet-b7.onnx </i> </p>
 
-<h3> Install Python Dependencies </h3>
+<h3>2. API Configuration </h3>
+<h4>Method 1: Install Python Dependencies </h4>
 
 ```bash
 pip install -r requirements.txt
 ```
 
-<h3> Start the FastAPI Server </h3>
+<h4> Start the FastAPI Server </h4>
 
 ```bash
 uvicorn app:app --reload
@@ -66,13 +66,14 @@ uvicorn app:app --reload
 
 <p> This will start the API server on: http://localhost:3016 </p>
 
-<h3> 2. Build Docker Image </h3>
+<h4>Method 2: Running with Docker </h4>
+<h4>Build Docker Image </h4>
 
 ```docker
-docker build -t sense_liveness_opensource_image </p>
+docker build -t sense_liveness_opensource_image .
 ```
 
-<h3> 3. Run Docker Container </h3>
+<h4>Run Docker Container </h4>
 
 ```docker
 docker run -d --name sense_liveness_opensource_container -p 3016:3016 sense_liveness_opensource_image
@@ -80,7 +81,7 @@ docker run -d --name sense_liveness_opensource_container -p 3016:3016 sense_live
 
 <p> This will start the API server on: http://localhost:3016 </p>
 
-<h3> 4. Run the Frontend </h3>
+<h3>3. Run the Frontend </h3>
 
 ```bash
 cd front-end
