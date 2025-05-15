@@ -1,26 +1,3 @@
-# # Clean production image
-# FROM pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime
-
-# WORKDIR /app
-
-# RUN apt-get update && apt-get install -y --no-install-recommends \
-#     libgl1-mesa-glx \
-#     libglib2.0-0 \
-#     && apt-get clean && rm -rf /var/lib/apt/lists/*
-
-# COPY requirements.txt .
-# RUN pip install --upgrade pip && \
-#     pip install --no-cache-dir -r requirements.txt
-
-# COPY . .
-
-# EXPOSE 3016
-
-# CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "3016"]
-
-
-
-
 # ✅ Ultra-optimized CPU-only FastAPI + Torch
 FROM python:3.9-slim
 
