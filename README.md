@@ -89,7 +89,7 @@ npm install
 npm run dev
 ```
 
-<p> <b> By default, the frontend runs on : http://localhost:5000 </b></p>
+<p> <b> By default, the frontend runs on : http://localhost:3010 </b></p>
 
 <h2>Useful Docker Commands</h2>
 
